@@ -18,11 +18,11 @@
 				if (/android/i.test(userAgent)) {
 					return [
 						'Android',
-						'https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.android.chrome',
+						'market://details?id=com.android.chrome',
 					];
 				}
 
-				if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				if (/iPad|iPhone|MacIntel|Macintosh/.test(userAgent) && !window.MSStream) {
 					return [
 						'iOS',
 						'itms-apps://itunes.apple.com/app/google-chrome/id535886823',
